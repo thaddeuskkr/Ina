@@ -339,7 +339,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.20.0":
+"eslint@npm:8.20.0":
   version: 8.20.0
   resolution: "eslint@npm:8.20.0"
   dependencies:
@@ -581,7 +581,7 @@ __metadata:
   resolution: "ina@workspace:."
   dependencies:
     discord.js: ^14.0.1
-    eslint: ^8.20.0
+    eslint: 8.20.0
     kazagumo: ^2.2.3
     kazagumo-spotify: ^1.1.4
   languageName: unknown
