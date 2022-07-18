@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@discordjs/rest", "npm:1.0.0"],\
             ["@keyv/mongo", "npm:2.1.6"],\
-            ["chalk", "npm:4.1.2"],\
+            ["chalk", "npm:5.0.1"],\
             ["discord-api-types", "npm:0.36.2"],\
             ["discord.js", "npm:14.0.1"],\
             ["dotenv", "npm:16.0.1"],\
@@ -363,6 +363,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:4.1.2"],\
             ["ansi-styles", "npm:4.3.0"],\
             ["supports-color", "npm:7.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:5.0.1", {\
+          "packageLocation": "./.yarn/cache/chalk-npm-5.0.1-6afcb94227-7b45300372.zip/node_modules/chalk/",\
+          "packageDependencies": [\
+            ["chalk", "npm:5.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -845,7 +852,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ina", "workspace:."],\
             ["@discordjs/rest", "npm:1.0.0"],\
             ["@keyv/mongo", "npm:2.1.6"],\
-            ["chalk", "npm:4.1.2"],\
+            ["chalk", "npm:5.0.1"],\
             ["discord-api-types", "npm:0.36.2"],\
             ["discord.js", "npm:14.0.1"],\
             ["dotenv", "npm:16.0.1"],\
