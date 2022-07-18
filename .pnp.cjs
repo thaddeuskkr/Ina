@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kazagumo-spotify", "npm:1.1.4"],\
             ["keyv", "npm:4.3.3"],\
             ["log-symbols", "npm:4.1.0"],\
-            ["pretty-ms", "npm:7.0.1"],\
+            ["pretty-ms", "npm:8.0.0"],\
             ["shoukaku", "npm:3.1.2"]\
           ],\
           "linkType": "SOFT"\
@@ -854,7 +854,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kazagumo-spotify", "npm:1.1.4"],\
             ["keyv", "npm:4.3.3"],\
             ["log-symbols", "npm:4.1.0"],\
-            ["pretty-ms", "npm:7.0.1"],\
+            ["pretty-ms", "npm:8.0.0"],\
             ["shoukaku", "npm:3.1.2"]\
           ],\
           "linkType": "SOFT"\
@@ -1143,10 +1143,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["parse-ms", [\
-        ["npm:2.1.0", {\
-          "packageLocation": "./.yarn/cache/parse-ms-npm-2.1.0-de852c39bb-d5c66c76cc.zip/node_modules/parse-ms/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/parse-ms-npm-3.0.0-3acf02c3f3-fc602bba09.zip/node_modules/parse-ms/",\
           "packageDependencies": [\
-            ["parse-ms", "npm:2.1.0"]\
+            ["parse-ms", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1206,11 +1206,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["pretty-ms", [\
-        ["npm:7.0.1", {\
-          "packageLocation": "./.yarn/cache/pretty-ms-npm-7.0.1-d748cac064-d76c492028.zip/node_modules/pretty-ms/",\
+        ["npm:8.0.0", {\
+          "packageLocation": "./.yarn/cache/pretty-ms-npm-8.0.0-7a40e0b54a-b7d2a81828.zip/node_modules/pretty-ms/",\
           "packageDependencies": [\
-            ["pretty-ms", "npm:7.0.1"],\
-            ["parse-ms", "npm:2.1.0"]\
+            ["pretty-ms", "npm:8.0.0"],\
+            ["parse-ms", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
