@@ -43,7 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kazagumo", "npm:2.2.3"],\
             ["kazagumo-spotify", "npm:1.1.4"],\
             ["keyv", "npm:4.3.3"],\
-            ["log-symbols", "npm:4.1.0"],\
+            ["log-symbols", "npm:5.1.0"],\
             ["pretty-ms", "npm:7.0.1"],\
             ["shoukaku", "npm:3.1.2"]\
           ],\
@@ -363,6 +363,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:4.1.2"],\
             ["ansi-styles", "npm:4.3.0"],\
             ["supports-color", "npm:7.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:5.0.1", {\
+          "packageLocation": "./.yarn/cache/chalk-npm-5.0.1-6afcb94227-7b45300372.zip/node_modules/chalk/",\
+          "packageDependencies": [\
+            ["chalk", "npm:5.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -853,7 +860,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kazagumo", "npm:2.2.3"],\
             ["kazagumo-spotify", "npm:1.1.4"],\
             ["keyv", "npm:4.3.3"],\
-            ["log-symbols", "npm:4.1.0"],\
+            ["log-symbols", "npm:5.1.0"],\
             ["pretty-ms", "npm:7.0.1"],\
             ["shoukaku", "npm:3.1.2"]\
           ],\
@@ -909,10 +916,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["is-unicode-supported", [\
-        ["npm:0.1.0", {\
-          "packageLocation": "./.yarn/cache/is-unicode-supported-npm-0.1.0-0833e1bbfb-a2aab86ee7.zip/node_modules/is-unicode-supported/",\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/is-unicode-supported-npm-1.2.0-ed541ab508-2d90b4b3ce.zip/node_modules/is-unicode-supported/",\
           "packageDependencies": [\
-            ["is-unicode-supported", "npm:0.1.0"]\
+            ["is-unicode-supported", "npm:1.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1035,12 +1042,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["log-symbols", [\
-        ["npm:4.1.0", {\
-          "packageLocation": "./.yarn/cache/log-symbols-npm-4.1.0-0a13492d8b-fce1497b31.zip/node_modules/log-symbols/",\
+        ["npm:5.1.0", {\
+          "packageLocation": "./.yarn/cache/log-symbols-npm-5.1.0-75864cfeb4-7291b6e7f1.zip/node_modules/log-symbols/",\
           "packageDependencies": [\
-            ["log-symbols", "npm:4.1.0"],\
-            ["chalk", "npm:4.1.2"],\
-            ["is-unicode-supported", "npm:0.1.0"]\
+            ["log-symbols", "npm:5.1.0"],\
+            ["chalk", "npm:5.0.1"],\
+            ["is-unicode-supported", "npm:1.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
