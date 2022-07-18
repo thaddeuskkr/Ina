@@ -30,6 +30,6 @@
     "kazagumo-spotify": "^1.1.4"
   },
   "devDependencies": {
-    "eslint": "^8.20.0"
+    "eslint": "8.20.0"
   }
 }
