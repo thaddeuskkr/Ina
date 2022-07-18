@@ -2,7 +2,7 @@
   "name": "ina",
   "version": "1.0.0",
   "description": "A Discord music bot, coded in Node, utilising Lavalink and discord.js v14 to play high quality music, with many features, all for free forever.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,9 +25,18 @@
   "homepage": "https://github.com/thaddeuskkr/Ina#readme",
   "packageManager": "yarn@3.2.1",
   "dependencies": {
+    "@discordjs/rest": "^1.0.0",
+    "@keyv/mongo": "^2.1.6",
+    "chalk": "3",
+    "discord-api-types": "^0.36.2",
     "discord.js": "^14.0.1",
+    "dotenv": "^16.0.1",
     "kazagumo": "^2.2.3",
-    "kazagumo-spotify": "^1.1.4"
+    "kazagumo-spotify": "^1.1.4",
+    "keyv": "^4.3.3",
+    "log-symbols": "4",
+    "pretty-ms": "7",
+    "shoukaku": "^3.1.2"
   },
   "devDependencies": {
     "eslint": "^8.20.0"
