@@ -1,4 +1,9 @@
 {
-    "eslint.packageManager": "yarn",
-    "eslint.format.enable": true
+  "eslint.packageManager": "yarn",
+  "eslint.format.enable": true,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks"
 }
