@@ -27,7 +27,7 @@
   "dependencies": {
     "@discordjs/rest": "^1.0.0",
     "@keyv/mongo": "^2.1.6",
-    "chalk": "3",
+    "chalk": "4",
     "discord-api-types": "^0.36.2",
     "discord.js": "^14.0.1",
     "dotenv": "^16.0.1",
