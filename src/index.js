@@ -88,8 +88,9 @@ const commands = fs.readdirSync('./src/commands').filter(file => file.endsWith('
 
 for (const command of commands) {
     const cmd = require(`./commands/${command}`);
-    if (!cmd.data?.name) {
+    if (!cmd?.data?.name) {
         client.logger.warn(`Failed to load command ${command.replace('.js', '')}: Command name not found`);
+        continue;
     }
     client.commands.set(cmd.data.name, cmd);
     commandCount++;
