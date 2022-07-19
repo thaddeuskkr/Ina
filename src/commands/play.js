@@ -26,8 +26,12 @@ module.exports = {
         let player = await client.kazagumo.createPlayer({
             guildId: interaction.guild.id,
             textId: interaction.channel.id,
-            voiceId: interaction.member.voice.channel.id
+            voiceId: interaction.member.voice.channel.id,
+            deaf: true,
+            mute: true
         });
+
+        player.setVolume(client.config.defaultVolume);
         
         if (!player.cleanup) player.cleanup = [];
 
