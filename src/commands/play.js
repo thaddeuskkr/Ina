@@ -28,6 +28,8 @@ module.exports = {
             textId: interaction.channel.id,
             voiceId: interaction.member.voice.channel.id
         });
+        
+        if (!player.cleanup) player.cleanup = [];
 
         let res = await client.kazagumo.search(query, { requester: interaction.user, engine: source });
         const noResultsEmbed = new EmbedBuilder()
@@ -36,8 +38,6 @@ module.exports = {
             .setColor(client.config.errorColor)
             .setFooter(client.config.footer);
         if (!res.tracks.length) return interaction.reply({ embeds: [noResultsEmbed] }).then(x => player.cleanup.push(x));
-
-        if (!player.cleanup) player.cleanup = [];
 
         if (res.type === 'PLAYLIST') for (let track of res.tracks) player.queue.add(track);
         else player.queue.add(res.tracks[0]);
