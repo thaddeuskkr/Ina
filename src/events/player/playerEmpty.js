@@ -7,7 +7,11 @@ module.exports = async (client, player) => {
         .setFooter(client.config.footer);
     if (!player.commandStop) client.channels.cache.get(player.textId)?.send({ embeds: [embed] });
     for (const msg of player.cleanup) {
-        await msg.delete().catch(() => null);
+        if (msg.interaction) {
+            await msg.interaction.deleteReply().catch(() => null);
+        } else {
+            await msg.delete().catch(() => null);
+        }
     }
     Wait(client.config.disconnectTimeout);
     if (player.queue.length == 0 && !player.queue.current) {
