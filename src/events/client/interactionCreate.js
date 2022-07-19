@@ -51,7 +51,7 @@ module.exports = async (client, interaction) => {
             embed.setDescription('You are not in a voice channel.');
             return interaction.reply({ embeds: [embed] });
         }
-        if (command.checks.includes('SAME_VC') && me.voice?.channelId !== null && interaction.member.voice.channelId !== me.voice?.channelId) {
+        if (command.checks.includes('SAME_VC') && me.voice?.channelId !== null && interaction.member.voice.channelId !== me.voice?.channelId && player.playing) {
             embed.setDescription('You are not in the same voice channel as me.');
             return interaction.reply({ embeds: [embed] });
         }
