@@ -17,7 +17,7 @@ module.exports = {
     // Stuff that you can't use a .env file for
     owners: ['275830234262142978'],
     defaultSearchEngine: 'youtube_music', // The default search engine that Lavalink uses to search
-    defaultVolume: 100, // The default volume that Lavalink uses 
+    defaultVolume: 50, // The default volume that Lavalink uses 
     url: 'https://inabot.tk', // The URL in the url fields of a lot of embeds. (Usually for author URL - but currently unused)
     color: '#af69ed', // The color of most embeds.
     errorColor: '#ad0000', // The color of error embeds.
