@@ -8,7 +8,7 @@ module.exports = {
     checks: ['IN_VC', 'SAME_VC', 'PLAYING'],
     async run (client, interaction, player) {
         const embed = new EmbedBuilder()
-            .setAuthor({ name: 'Skipped' })
+            .setAuthor({ name: 'Stopped' })
             .setDescription('Stopped the player and cleared the queue.')
             .setColor(client.config.color)
             .setFooter(client.config.footer);
