@@ -43,7 +43,7 @@ module.exports = {
         if (!player.playing && !player.paused) player.play();
         const embed = new EmbedBuilder()
             // .setAuthor({ name: 'Queued', iconURL: interaction.user.avatarURL({ size: 4096 }) })
-            .setDescription(`${res.type === 'PLAYLIST' ? `Queued **${res.tracks.length} tracks** from **${res.playlistName}**` : `Queued **${res.tracks[0].title}** by **${res.tracks[0].author}**`} \`${client.util.formatTime(res.tracks[0].length, res.tracks[0].isStream)}\``)
+            .setDescription(`${res.type === 'PLAYLIST' ? `Queued **${res.tracks.length} tracks** from **[${res.playlistName}](${query})**` : `Queued [**${res.tracks[0].title}** by **${res.tracks[0].author}**](${res.tracks[0].uri})`} `)
             // .setFooter(client.config.footer)
             .setColor(client.config.color);
         return interaction.reply({ embeds: [embed] });
