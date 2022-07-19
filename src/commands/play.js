@@ -35,7 +35,7 @@ module.exports = {
             .setDescription(`There were no results found for your query (\`${query}\`).`)
             .setColor(client.config.errorColor)
             .setFooter(client.config.footer);
-        if (!res.tracks.length) return interaction.reply({ embeds: [noResultsEmbed] });
+        if (!res.tracks.length) return interaction.reply({ embeds: [noResultsEmbed] }).then(x => player.cleanup.push(x));
 
         if (!player.cleanup) player.cleanup = [];
 
