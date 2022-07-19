@@ -37,6 +37,8 @@ module.exports = {
             .setFooter(client.config.footer);
         if (!res.tracks.length) return interaction.reply({ embeds: [noResultsEmbed] });
 
+        if (!player.cleanup) player.cleanup = [];
+
         if (res.type === 'PLAYLIST') for (let track of res.tracks) player.queue.add(track);
         else player.queue.add(res.tracks[0]);
 
@@ -46,6 +48,6 @@ module.exports = {
             .setDescription(`${res.type === 'PLAYLIST' ? `Queued **${res.tracks.length} tracks** from **[${res.playlistName}](${query})**` : `Queued [**${res.tracks[0].title}** by **${res.tracks[0].author}**](${res.tracks[0].uri})`} `)
             // .setFooter(client.config.footer)
             .setColor(client.config.color);
-        return interaction.reply({ embeds: [embed] });
+        return interaction.reply({ embeds: [embed] }).then(x => player.cleanup.push(x));
     }
 };

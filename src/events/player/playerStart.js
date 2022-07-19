@@ -9,5 +9,6 @@ module.exports = async (client, player, track) => {
         .setFooter(client.config.footer)
         .setThumbnail(track.thumbnail)
         .setColor(client.config.color);
-    client.channels.cache.get(player.textId)?.send({ embeds: [embed] }).then(x => player.data.set('message', x));
+    player.commandStop = false;
+    client.channels.cache.get(player.textId)?.send({ embeds: [embed] }).then(x => player.cleanup.push(x));
 };
