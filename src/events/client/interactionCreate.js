@@ -25,7 +25,7 @@ module.exports = async (client, interaction) => {
                 .setDescription('**You do not have sufficient permissions to run this command.**\nOnly the bot owner can use this command.')
                 .setColor(client.config.errorColor)
                 .setFooter(client.config.footer);
-            return interaction.reply({ embeds: [embed] });
+            return interaction.reply({ embeds: [embed], ephemeral: true });
         }
         const index = command.permissions.indexOf('OWNER');
         if (index > -1) {
@@ -38,7 +38,7 @@ module.exports = async (client, interaction) => {
                     .setDescription(`**You do not have sufficient permissions to run this command.**\nYou need the \`${command.permissions[i]}\` permission.`)
                     .setColor(client.config.errorColor)
                     .setFooter(client.config.footer);
-                return interaction.reply({ embeds: [embed] });
+                return interaction.reply({ embeds: [embed], ephemeral: true });
             }
         }
     }
@@ -49,19 +49,19 @@ module.exports = async (client, interaction) => {
             .setFooter(client.config.footer);
         if (command.checks.includes('IN_VC') && interaction.member.voice.channelId == null) {
             embed.setDescription('You are not in a voice channel.');
-            return interaction.reply({ embeds: [embed] });
+            return interaction.reply({ embeds: [embed], ephemeral: true });
         }
         if (command.checks.includes('SAME_VC') && me.voice?.channelId !== null && interaction.member.voice.channelId !== me.voice?.channelId && player.playing) {
             embed.setDescription('You are not in the same voice channel as me.');
-            return interaction.reply({ embeds: [embed] });
+            return interaction.reply({ embeds: [embed], ephemeral: true });
         }
         if (command.checks.includes('PLAYING') && (!player || !player?.queue?.current)) {
             embed.setDescription('There is nothing playing.');
-            return interaction.reply({ embeds: [embed] });
+            return interaction.reply({ embeds: [embed], ephemeral: true });
         }
         if (command.checks.includes('QUEUE') && !player.queue.length) {
             embed.setDescription('There is nothing in the queue.');
-            return interaction.reply({ embeds: [embed] });
+            return interaction.reply({ embeds: [embed], ephemeral: true }).then(x => player?.cleanup?.push(x));
         }
     }
 
