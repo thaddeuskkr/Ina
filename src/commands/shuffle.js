@@ -4,7 +4,7 @@ module.exports = {
         .setName('shuffle')
         .setDescription('Shuffles the queue.'),
     permissions: [],
-    checks: ['IN_VC', 'SAME_VC', 'PLAYING'],
+    checks: ['IN_VC', 'SAME_VC', 'PLAYING', 'QUEUE'],
     async run (client, interaction, player) {
         const embed = new EmbedBuilder()
             .setAuthor({ name: 'Shuffled' })
