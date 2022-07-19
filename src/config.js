@@ -23,11 +23,14 @@ module.exports = {
     errorColor: '#ad0000', // The color of error embeds.
     footer: { text: 'Ina, by thaddeuskkr • inabot.tk • v{version}', iconURL: '{avatar}' }, // The default footer used for embeds.
     disconnectTimeout: 300000, // An amount of time before the bot disconnects from the voice channel if there are no more tracks in queue. (In milliseconds)
-    activity: {
-        type: 'LISTENING', // The type of activity the bot will show on rich presence.
-        text: 'music | inabot.tk', // The text that will be shown behind the type of activity.
-        status: 'idle' // The status of the bot (online, idle, dnd, invisible).
-        // {TYPE} {TEXT}
-        // Listening to music | inabot.tk
+    presence: {
+        status: 'idle', // The status of the bot. - online, idle, dnd, invisible
+        activities: [
+            {
+                name: 'music', // The name of the activity.
+                type: 'LISTENING', // The type of the activity.
+                url: 'https://inabot.tk' // The URL of the activity (if applicable).
+            }
+        ]
     }
 };

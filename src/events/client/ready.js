@@ -6,8 +6,7 @@ module.exports = async (client) => {
     client.config.footer.iconURL = client.config.footer.iconURL.replace('{avatar}', client.user.avatarURL({ size: 4096 }));
 
     // Set client activity and status
-    await client.user.setActivity(client.config.activity.text, { type: client.config.activity.type });
-    await client.user.setStatus(client.config.activity.status);
+    await client.user.setPresence(client.config.presence);
 
     // Set the client as ready
     client.ready = true;
