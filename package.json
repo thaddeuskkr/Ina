@@ -29,7 +29,7 @@
     "@keyv/mongo": "^2.1.6",
     "chalk": "4",
     "discord-api-types": "^0.36.2",
-    "discord.js": "^14.0.1",
+    "discord.js": "^14.0.2",
     "dotenv": "^16.0.1",
     "kazagumo": "^2.2.3",
     "kazagumo-spotify": "^1.1.4",
