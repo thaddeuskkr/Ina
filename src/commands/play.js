@@ -21,7 +21,7 @@ module.exports = {
     checks: ['IN_VC', 'SAME_VC'],
     async run (client, interaction) {
         const query = interaction.options.getString('query');
-        const source = interaction.options.getString('source') || 'spotify';
+        const source = interaction.options.getString('source'); // || 'spotify';
 
         let player = await client.kazagumo.createPlayer({
             guildId: interaction.guild.id,
