@@ -440,7 +440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:4, chalk@npm:^4.0.0, chalk@npm:^4.1.0":
+"chalk@npm:4.1.2, chalk@npm:^4.0.0, chalk@npm:^4.1.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -1148,7 +1148,7 @@ __metadata:
   dependencies:
     "@discordjs/rest": ^1.0.0
     "@keyv/mongo": ^2.1.6
-    chalk: 4
+    chalk: 4.1.2
     discord-api-types: ^0.36.2
     discord.js: ^14.0.2
     dotenv: ^16.0.1
@@ -1156,9 +1156,9 @@ __metadata:
     kazagumo: ^2.2.3
     kazagumo-spotify: ^1.1.4
     keyv: ^4.3.3
-    log-symbols: 4
+    log-symbols: 4.1.0
     lyrics-searcher: ^1.0.58
-    pretty-ms: 7
+    pretty-ms: 7.0.1
     shoukaku: ^3.1.2
   languageName: unknown
   linkType: soft
@@ -1351,7 +1351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"log-symbols@npm:4":
+"log-symbols@npm:4.1.0":
   version: 4.1.0
   resolution: "log-symbols@npm:4.1.0"
   dependencies:
@@ -1748,7 +1748,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-ms@npm:7":
+"pretty-ms@npm:7.0.1":
   version: 7.0.1
   resolution: "pretty-ms@npm:7.0.1"
   dependencies:
