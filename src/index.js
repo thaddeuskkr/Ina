@@ -8,6 +8,8 @@ const { Connectors } = require('shoukaku');
 const { Kazagumo } = require('kazagumo');
 const { Partials, GatewayIntentBits } = Discord;
 
+console.clear();
+
 const client = new Discord.Client({ 
     intents: [
         GatewayIntentBits.DirectMessageReactions,
