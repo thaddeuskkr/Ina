@@ -61,6 +61,7 @@ module.exports = {
                         .setStyle(ButtonStyle.Primary)
                 ];
                 client.util.pagination(interaction, pages, buttons, 600000, client.config.footer.text);
+                if (player && player.playing) player.cleanup.push(interaction);
             })
             .catch(error => {
                 client.logger.warn(`Failed to get lyrics: ${title} - ${artist} | ${error.toString()}`);
