@@ -23,6 +23,8 @@ module.exports = {
         const query = interaction.options.getString('query');
         const source = interaction.options.getString('source'); // || 'spotify';
 
+        await interaction.deferReply();
+
         let player = await client.kazagumo.createPlayer({
             guildId: interaction.guild.id,
             textId: interaction.channel.id,
@@ -41,7 +43,7 @@ module.exports = {
             .setDescription(`There were no results found for your query (\`${query}\`).`)
             .setColor(client.config.errorColor)
             .setFooter(client.config.footer);
-        if (!res.tracks.length) return interaction.reply({ embeds: [noResultsEmbed] }).then(x => player.cleanup.push(x));
+        if (!res.tracks.length) return interaction.editReply({ embeds: [noResultsEmbed] }).then(player.cleanup.push(interaction));
 
         if (res.type === 'PLAYLIST') for (let track of res.tracks) player.queue.add(track);
         else player.queue.add(res.tracks[0]);
@@ -52,6 +54,6 @@ module.exports = {
             .setDescription(`${res.type === 'PLAYLIST' ? `Queued **${res.tracks.length} tracks** from **[${res.playlistName}](${query})**` : `Queued [**${res.tracks[0].title}** by **${res.tracks[0].author}**](${res.tracks[0].uri})`} `)
             // .setFooter(client.config.footer)
             .setColor(client.config.color);
-        return interaction.reply({ embeds: [embed] }).then(x => player.cleanup.push(x));
+        return interaction.editReply({ embeds: [embed] }).then(player.cleanup.push(interaction));
     }
 };
