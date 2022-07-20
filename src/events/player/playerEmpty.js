@@ -9,6 +9,8 @@ module.exports = async (client, player) => {
     for (const msg of player.cleanup) {
         if (msg.interaction) {
             await msg.interaction.deleteReply().catch(() => null);
+        } else if (msg.replied && msg.replied == true) {
+            await msg.deleteReply().catch(() => null);
         } else {
             await msg.delete().catch(() => null);
         }
