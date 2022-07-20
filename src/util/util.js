@@ -2,7 +2,7 @@ const prettyms = require('pretty-ms');
 const { ActionRowBuilder, ButtonStyle } = require('discord.js');
 module.exports = {
     formatTime: (ms, stream) => {
-        if (stream && stream === true) return 'LIVE';
+        if (stream && stream === true) return '[STREAM/LIVE]';
         return prettyms(ms, { colonNotation: true, millisecondsDecimalDigits: 0, secondsDecimalDigits: 0 });
     },
     pagination: async (interaction, pages, buttonList, timeout = 120000, footer) => {
