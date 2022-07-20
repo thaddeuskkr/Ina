@@ -63,10 +63,10 @@ module.exports = {
                 client.util.pagination(interaction, pages, buttons, 600000, client.config.footer.text);
             })
             .catch(error => {
-                client.logger.error(`Failed to get lyrics: ${title} - ${artist} | ${error.toString()}`);
+                client.logger.warn(`Failed to get lyrics: ${title} - ${artist} | ${error.toString()}`);
                 const embed = new EmbedBuilder()
                     .setAuthor({ name: 'Error' })
-                    .setDescription('Failed to get lyrics.')
+                    .setDescription('Failed to get lyrics.\n`' + error.toString() + '`')
                     .setColor(client.config.errorColor)
                     .setFooter(client.config.footer);
                 return interaction.reply({ embeds: [embed], ephemeral: true });
