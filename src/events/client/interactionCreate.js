@@ -74,7 +74,11 @@ module.exports = async (client, interaction) => {
             .setDescription(`__Error executing command **${commandName}**:__\n\`\`\`${err.toString()}\`\`\``)
             .setColor(client.config.errorColor)
             .setFooter(client.config.footer);
-        if (interaction.deferred == true || interaction.replied == true) return await interaction.editReply({ embeds: [ embed ], ephemeral: true });
-        await interaction.reply({ embeds: [ embed ], ephemeral: true });
+        try {
+            if (interaction.deferred == true || interaction.replied == true) return await interaction.editReply({ embeds: [ embed ], ephemeral: true });
+            await interaction.reply({ embeds: [ embed ], ephemeral: true });
+        } catch (err) {
+            client.logger.error(`Error while sending error message: ${err.toString()}`);
+        }
     }
 };
