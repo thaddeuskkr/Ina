@@ -43,7 +43,10 @@ module.exports = {
             .setDescription(`There were no results found for your query (\`${query}\`).`)
             .setColor(client.config.errorColor)
             .setFooter(client.config.footer);
-        if (!res.tracks.length) return interaction.editReply({ embeds: [noResultsEmbed] }).then(player.cleanup.push(interaction));
+        if (!res.tracks.length) {
+            client.logger.warn(`Search failed (${query}): ${res}`);
+            return interaction.editReply({ embeds: [noResultsEmbed] }).then(player.cleanup.push(interaction));
+        }
 
         if (res.type === 'PLAYLIST') for (let track of res.tracks) player.queue.add(track);
         else player.queue.add(res.tracks[0]);
