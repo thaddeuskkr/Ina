@@ -1,6 +1,6 @@
 {
   "name": "ina",
-  "version": "1.5.0",
+  "version": "1.5.7",
   "description": "A Discord music bot, coded in Node, utilising Lavalink and discord.js v14 to play high quality music, with many features, all for free forever.",
   "main": "src/index.js",
   "scripts": {
