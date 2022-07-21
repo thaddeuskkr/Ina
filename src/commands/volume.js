@@ -29,7 +29,7 @@ module.exports = {
                 .setFooter(client.config.footer);
             return await interaction.reply({ embeds: [embed], ephemeral: true });
         }
-        player.setVolume(volume / 100);
+        player.setVolume(volume);
         const embed = new EmbedBuilder()
             .setAuthor({ name: 'Volume' })
             .setDescription(`The volume has been changed from **${oldVolume}%** to **${volume}%**.`)

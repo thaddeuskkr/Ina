@@ -33,7 +33,7 @@ module.exports = {
             mute: true
         });
 
-        player.setVolume(client.config.defaultVolume);
+        // player.setVolume(client.config.defaultVolume); // preserves audio quality if unchanged
         
         if (!player.cleanup) player.cleanup = [];
 
@@ -44,7 +44,7 @@ module.exports = {
             .setColor(client.config.errorColor)
             .setFooter(client.config.footer);
         if (!res.tracks.length) {
-            client.logger.warn(`Search failed (${query}): ${res}`);
+            client.logger.warn(`Search failed (${query}): ${JSON.stringify(res)}`);
             return interaction.editReply({ embeds: [noResultsEmbed] }).then(player.cleanup.push(interaction));
         }
 
