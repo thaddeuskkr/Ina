@@ -13,7 +13,7 @@ module.exports = {
         const row = new ActionRowBuilder().addComponents(buttonList);
         if (interaction.deferred == false) await interaction.deferReply();
         const currentPage = await interaction.editReply({
-            embeds: [pages[page].setFooter({ text: `${footer} | Page ${page + 1} of ${pages.length}` })],
+            embeds: [pages[page].setFooter({ text: `${footer.text} | Page ${page + 1} of ${pages.length}`, iconURL: footer.iconURL })],
             components: [row],
             fetchReply: true
         });
@@ -33,7 +33,7 @@ module.exports = {
             }
             await i.deferUpdate();
             await i.editReply({
-                embeds: [pages[page].setFooter({ text: `${footer} | Page ${page + 1} of ${pages.length}` })],
+                embeds: [pages[page].setFooter({ text: `${footer.text} | Page ${page + 1} of ${pages.length}`, iconURL: footer.iconURL })],
                 components: [row]
             });
             collector.resetTimer();
@@ -45,7 +45,7 @@ module.exports = {
                     buttonList[1].setDisabled(true)
                 );
                 currentPage.edit({
-                    embeds: [pages[page].setFooter({ text: `${footer} | Page ${page + 1} of ${pages.length}` })],
+                    embeds: [pages[page].setFooter({ text: `${footer.text} | Page ${page + 1} of ${pages.length}`, iconURL: footer.iconURL })],
                     components: [disabledRow]
                 });
             }
