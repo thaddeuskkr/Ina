@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@keyv/mongo", "npm:2.1.6"],\
             ["chalk", "npm:4.1.2"],\
             ["discord-api-types", "npm:0.36.2"],\
-            ["discord.js", "npm:14.0.2"],\
+            ["discord.js", "npm:14.0.3"],\
             ["dotenv", "npm:16.0.1"],\
             ["eslint", "npm:8.20.0"],\
             ["kazagumo", "npm:2.2.3"],\
@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["log-symbols", "npm:4.1.0"],\
             ["lyrics-searcher", "npm:1.0.58"],\
             ["pretty-ms", "npm:7.0.1"],\
-            ["shoukaku", "npm:3.1.2"]\
+            ["shoukaku", "npm:3.1.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -763,10 +763,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["discord.js", [\
-        ["npm:14.0.2", {\
-          "packageLocation": "./.yarn/cache/discord.js-npm-14.0.2-85f2a9f38b-70fae5110d.zip/node_modules/discord.js/",\
+        ["npm:14.0.3", {\
+          "packageLocation": "./.yarn/cache/discord.js-npm-14.0.3-4ce8ffc715-63c61ab94e.zip/node_modules/discord.js/",\
           "packageDependencies": [\
-            ["discord.js", "npm:14.0.2"],\
+            ["discord.js", "npm:14.0.3"],\
             ["@discordjs/builders", "npm:1.0.0"],\
             ["@discordjs/collection", "npm:1.0.0"],\
             ["@discordjs/rest", "npm:1.0.0"],\
@@ -777,7 +777,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.snakecase", "npm:4.1.1"],\
             ["tslib", "npm:2.4.0"],\
             ["undici", "npm:5.8.0"],\
-            ["ws", "virtual:85f2a9f38b864483e0f4f988454d199ed0bb9f8804291aea2e127da15275f2d059d7bc84c8997d7c1a117cdef5cb42902eee450e546c2ff302ce54c06052cf55#npm:8.8.1"]\
+            ["ws", "virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1408,7 +1408,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@keyv/mongo", "npm:2.1.6"],\
             ["chalk", "npm:4.1.2"],\
             ["discord-api-types", "npm:0.36.2"],\
-            ["discord.js", "npm:14.0.2"],\
+            ["discord.js", "npm:14.0.3"],\
             ["dotenv", "npm:16.0.1"],\
             ["eslint", "npm:8.20.0"],\
             ["kazagumo", "npm:2.2.3"],\
@@ -1417,7 +1417,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["log-symbols", "npm:4.1.0"],\
             ["lyrics-searcher", "npm:1.0.58"],\
             ["pretty-ms", "npm:7.0.1"],\
-            ["shoukaku", "npm:3.1.2"]\
+            ["shoukaku", "npm:3.1.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2296,7 +2296,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["shoukaku", "npm:3.1.2"],\
             ["petitio", "npm:1.4.0"],\
-            ["ws", "virtual:85f2a9f38b864483e0f4f988454d199ed0bb9f8804291aea2e127da15275f2d059d7bc84c8997d7c1a117cdef5cb42902eee450e546c2ff302ce54c06052cf55#npm:8.8.1"]\
+            ["ws", "virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:3.1.3", {\
+          "packageLocation": "./.yarn/cache/shoukaku-npm-3.1.3-414bb6c810-130225845b.zip/node_modules/shoukaku/",\
+          "packageDependencies": [\
+            ["shoukaku", "npm:3.1.3"],\
+            ["petitio", "npm:1.4.0"],\
+            ["ws", "virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2629,10 +2638,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:85f2a9f38b864483e0f4f988454d199ed0bb9f8804291aea2e127da15275f2d059d7bc84c8997d7c1a117cdef5cb42902eee450e546c2ff302ce54c06052cf55#npm:8.8.1", {\
-          "packageLocation": "./.yarn/__virtual__/ws-virtual-e8451ade9b/0/cache/ws-npm-8.8.1-955e8c9f58-2152cf862c.zip/node_modules/ws/",\
+        ["virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1", {\
+          "packageLocation": "./.yarn/__virtual__/ws-virtual-e85371df55/0/cache/ws-npm-8.8.1-955e8c9f58-2152cf862c.zip/node_modules/ws/",\
           "packageDependencies": [\
-            ["ws", "virtual:85f2a9f38b864483e0f4f988454d199ed0bb9f8804291aea2e127da15275f2d059d7bc84c8997d7c1a117cdef5cb42902eee450e546c2ff302ce54c06052cf55#npm:8.8.1"],\
+            ["ws", "virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1"],\
             ["@types/bufferutil", null],\
             ["@types/utf-8-validate", null],\
             ["bufferutil", null],\
