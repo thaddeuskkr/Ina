@@ -22,7 +22,9 @@ module.exports = {
     color: '#af69ed', // The color of most embeds.
     errorColor: '#ad0000', // The color of error embeds.
     footer: { text: 'Ina, by thaddeuskkr • inabot.tk • v{version}', iconURL: '{avatar}' }, // The default footer used for embeds.
-    disconnectTimeout: 300000, // An amount of time before the bot disconnects from the voice channel if there are no more tracks in queue. (In milliseconds)
+    disconnectTimeout: 300000, // An amount of time before the bot disconnects from the voice channel if there are no more tracks in queue. (In milliseconds),
+    evalChannel: '998547486346051714', // The channel to evaluate things in.
+    tracksPerPage: 10,
     presence: {
         status: 'idle', // The status of the bot. - online, idle, dnd, invisible
         activities: [
