@@ -60,7 +60,7 @@ module.exports = {
                         .setLabel('Next')
                         .setStyle(ButtonStyle.Primary)
                 ];
-                client.util.pagination(interaction, pages, buttons, 600000, client.config.footer.text);
+                client.util.pagination(interaction, pages, buttons, 600000, client.config.footer);
                 if (player && player.playing) player.cleanup.push(interaction);
             })
             .catch(error => {
