@@ -1,5 +1,4 @@
 const { EmbedBuilder } = require('discord.js');
-const Wait = require('util').promisify(setTimeout);
 module.exports = async (client, player) => {
     const embed = new EmbedBuilder()
         .setDescription('*No more tracks in queue.*')
@@ -15,10 +14,11 @@ module.exports = async (client, player) => {
             await msg.delete().catch(() => null);
         }
     }
-    Wait(client.config.disconnectTimeout);
-    if (player.queue.length == 0 && !player.queue.current) {
-        player.destroy();
-    } else {
-        return;
-    }
+    setTimeout(() => {
+        if (player.queue.length == 0 && !player.queue.current) {
+            player.destroy();
+        } else {
+            return;
+        }
+    }, client.config.disconnectTimeout);
 };

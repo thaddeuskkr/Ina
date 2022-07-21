@@ -1,5 +1,4 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const Wait = require('util').promisify(setTimeout);
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('stop')
@@ -17,12 +16,14 @@ module.exports = {
         player.setLoop('none');
         player.setVolume(client.config.defaultVolume);
         player.skip();
-        interaction.reply({ embeds: [embed] });
-        Wait(client.config.disconnectTimeout);
-        if (player.queue.length == 0 && !player.queue.current) {
-            player.destroy();
-        } else {
-            return;
-        }
+        interaction.reply({ embeds: [embed] }).then(msg => {
+            setTimeout(() => {
+                if (player.queue.length == 0 && !player.queue.current) {
+                    player.destroy();
+                } else {
+                    return;
+                }
+            }, client.config.disconnectTimeout);
+        });
     }
 };
