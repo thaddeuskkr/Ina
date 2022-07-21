@@ -169,10 +169,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@npmcli/fs", [\
-        ["npm:2.1.0", {\
-          "packageLocation": "./.yarn/cache/@npmcli-fs-npm-2.1.0-3b106d08bc-6ec6d678af.zip/node_modules/@npmcli/fs/",\
+        ["npm:2.1.1", {\
+          "packageLocation": "./.yarn/cache/@npmcli-fs-npm-2.1.1-2769242877-4944a0545d.zip/node_modules/@npmcli/fs/",\
           "packageDependencies": [\
-            ["@npmcli/fs", "npm:2.1.0"],\
+            ["@npmcli/fs", "npm:2.1.1"],\
             ["@gar/promisify", "npm:1.1.3"],\
             ["semver", "npm:7.3.7"]\
           ],\
@@ -531,7 +531,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cacache-npm-16.1.1-84a00badf3-4885246170.zip/node_modules/cacache/",\
           "packageDependencies": [\
             ["cacache", "npm:16.1.1"],\
-            ["@npmcli/fs", "npm:2.1.0"],\
+            ["@npmcli/fs", "npm:2.1.1"],\
             ["@npmcli/move-file", "npm:2.0.0"],\
             ["chownr", "npm:2.0.0"],\
             ["fs-minipass", "npm:2.1.0"],\
@@ -1581,7 +1581,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["kazagumo", "npm:2.2.3"],\
             ["events", "npm:3.3.0"],\
-            ["shoukaku", "npm:3.1.2"]\
+            ["shoukaku", "npm:3.1.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1689,10 +1689,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["make-fetch-happen", [\
-        ["npm:10.1.8", {\
-          "packageLocation": "./.yarn/cache/make-fetch-happen-npm-10.1.8-1571a0a77a-5fe9fd9da5.zip/node_modules/make-fetch-happen/",\
+        ["npm:10.2.0", {\
+          "packageLocation": "./.yarn/cache/make-fetch-happen-npm-10.2.0-1f4b459b17-2f6c294179.zip/node_modules/make-fetch-happen/",\
           "packageDependencies": [\
-            ["make-fetch-happen", "npm:10.1.8"],\
+            ["make-fetch-happen", "npm:10.2.0"],\
             ["agentkeepalive", "npm:4.2.1"],\
             ["cacache", "npm:16.1.1"],\
             ["http-cache-semantics", "npm:4.1.0"],\
@@ -1921,7 +1921,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["env-paths", "npm:2.2.1"],\
             ["glob", "npm:7.2.3"],\
             ["graceful-fs", "npm:4.2.10"],\
-            ["make-fetch-happen", "npm:10.1.8"],\
+            ["make-fetch-happen", "npm:10.2.0"],\
             ["nopt", "npm:5.0.0"],\
             ["npmlog", "npm:6.0.2"],\
             ["rimraf", "npm:3.0.2"],\
@@ -2291,15 +2291,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["shoukaku", [\
-        ["npm:3.1.2", {\
-          "packageLocation": "./.yarn/cache/shoukaku-npm-3.1.2-e7f3e365f9-c48b1cb638.zip/node_modules/shoukaku/",\
-          "packageDependencies": [\
-            ["shoukaku", "npm:3.1.2"],\
-            ["petitio", "npm:1.4.0"],\
-            ["ws", "virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:3.1.3", {\
           "packageLocation": "./.yarn/cache/shoukaku-npm-3.1.3-414bb6c810-130225845b.zip/node_modules/shoukaku/",\
           "packageDependencies": [\
