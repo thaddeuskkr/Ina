@@ -6,7 +6,7 @@ module.exports = {
         .addIntegerOption(option => option
             .setName('index')
             .setDescription('Which track would you like to remove?')
-            .setRequired(false)),
+            .setRequired(true)),
     permissions: [],
     checks: ['IN_VC', 'SAME_VC', 'PLAYING', 'QUEUE'],
     async run (client, interaction, player) {
