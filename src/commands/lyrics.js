@@ -13,7 +13,7 @@ module.exports = {
             .setDescription('Who wrote the song that you are searching for?')
             .setRequired(false)),
     permissions: [],
-    checks: ['IN_VC', 'SAME_VC'],
+    checks: [],
     async run (client, interaction, player) {
         let title = interaction.options.getString('query-title');
         let artist = interaction.options.getString('query-artist');
