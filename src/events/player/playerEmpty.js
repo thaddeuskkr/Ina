@@ -4,7 +4,7 @@ module.exports = async (client, player) => {
         .setDescription('*No more tracks in queue.*')
         .setColor(client.config.color)
         .setFooter(client.config.footer);
-    if (!player.commandStop) client.channels.cache.get(player.textId)?.send({ embeds: [embed] });
+    if (!player.commandStop) client.channels.cache.get(player.textId)?.send({ embeds: [embed] }).then(msg => { setTimeout(() => { msg.delete(); }, 10000); });
     for (const msg of player.cleanup) {
         if (msg.interaction) {
             await msg.interaction.deleteReply().catch(() => null);
