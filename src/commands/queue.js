@@ -63,6 +63,7 @@ module.exports = {
                 .setLabel('Next')
                 .setStyle(ButtonStyle.Primary)
         ];
+        player.cleanup.push(interaction);
         client.util.pagination(interaction, finalEmbeds, buttons, undefined, client.config.footer);
     }
 };
