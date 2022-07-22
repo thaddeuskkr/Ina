@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@discordjs/builders", "npm:1.0.0"],\
             ["@sapphire/shapeshift", "npm:3.5.1"],\
-            ["discord-api-types", "npm:0.36.2"],\
+            ["discord-api-types", "npm:0.36.3"],\
             ["fast-deep-equal", "npm:3.1.3"],\
             ["ts-mixer", "npm:6.0.1"],\
             ["tslib", "npm:2.4.0"]\
@@ -85,8 +85,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@discordjs/collection", "npm:1.0.0"],\
             ["@sapphire/async-queue", "npm:1.3.2"],\
             ["@sapphire/snowflake", "npm:3.2.2"],\
-            ["discord-api-types", "npm:0.36.2"],\
-            ["file-type", "npm:17.1.2"],\
+            ["discord-api-types", "npm:0.36.3"],\
+            ["file-type", "npm:17.1.3"],\
             ["tslib", "npm:2.4.0"],\
             ["undici", "npm:5.8.0"]\
           ],\
@@ -101,7 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:6.12.6"],\
             ["debug", "virtual:1f3c51be25fef20e854261431be23d317093b3b463e81e911f4f45a636ff582620db066c9d2a5922a428e07e10fe4788eee8196c796ce2c9bd49d22743fec207#npm:4.3.4"],\
             ["espree", "npm:9.3.2"],\
-            ["globals", "npm:13.16.0"],\
+            ["globals", "npm:13.17.0"],\
             ["ignore", "npm:5.2.0"],\
             ["import-fresh", "npm:3.3.0"],\
             ["js-yaml", "npm:4.1.0"],\
@@ -337,10 +337,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["acorn", [\
-        ["npm:8.7.1", {\
-          "packageLocation": "./.yarn/cache/acorn-npm-8.7.1-7c7a019990-aca0aabf98.zip/node_modules/acorn/",\
+        ["npm:8.8.0", {\
+          "packageLocation": "./.yarn/cache/acorn-npm-8.8.0-9ef399ab45-7270ca82b2.zip/node_modules/acorn/",\
           "packageDependencies": [\
-            ["acorn", "npm:8.7.1"]\
+            ["acorn", "npm:8.8.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -358,7 +358,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["acorn-jsx", "virtual:c70fa2a91dcbd99b022aeff42b1b7671b1079fb9945248dc00dedd7520f879dc07058703f4626782de94f97692f30d5b18138d744c1e1ed1913a7610755d40e3#npm:5.3.2"],\
             ["@types/acorn", null],\
-            ["acorn", "npm:8.7.1"]\
+            ["acorn", "npm:8.8.0"]\
           ],\
           "packagePeers": [\
             "@types/acorn",\
@@ -797,13 +797,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["discord-api-types", [\
-        ["npm:0.36.2", {\
-          "packageLocation": "./.yarn/cache/discord-api-types-npm-0.36.2-cbe93c5d39-0275ac9db1.zip/node_modules/discord-api-types/",\
-          "packageDependencies": [\
-            ["discord-api-types", "npm:0.36.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:0.36.3", {\
           "packageLocation": "./.yarn/cache/discord-api-types-npm-0.36.3-63aa977556-3089c0fb37.zip/node_modules/discord-api-types/",\
           "packageDependencies": [\
@@ -822,7 +815,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@discordjs/rest", "npm:1.0.0"],\
             ["@sapphire/snowflake", "npm:3.2.2"],\
             ["@types/ws", "npm:8.5.3"],\
-            ["discord-api-types", "npm:0.36.2"],\
+            ["discord-api-types", "npm:0.36.3"],\
             ["fast-deep-equal", "npm:3.1.3"],\
             ["lodash.snakecase", "npm:4.1.1"],\
             ["tslib", "npm:2.4.0"],\
@@ -1016,7 +1009,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["file-entry-cache", "npm:6.0.1"],\
             ["functional-red-black-tree", "npm:1.0.1"],\
             ["glob-parent", "npm:6.0.2"],\
-            ["globals", "npm:13.16.0"],\
+            ["globals", "npm:13.17.0"],\
             ["ignore", "npm:5.2.0"],\
             ["import-fresh", "npm:3.3.0"],\
             ["imurmurhash", "npm:0.1.4"],\
@@ -1092,7 +1085,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/espree-npm-9.3.2-c70fa2a91d-9a790d6779.zip/node_modules/espree/",\
           "packageDependencies": [\
             ["espree", "npm:9.3.2"],\
-            ["acorn", "npm:8.7.1"],\
+            ["acorn", "npm:8.8.0"],\
             ["acorn-jsx", "virtual:c70fa2a91dcbd99b022aeff42b1b7671b1079fb9945248dc00dedd7520f879dc07058703f4626782de94f97692f30d5b18138d744c1e1ed1913a7610755d40e3#npm:5.3.2"],\
             ["eslint-visitor-keys", "npm:3.3.0"]\
           ],\
@@ -1184,10 +1177,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["file-type", [\
-        ["npm:17.1.2", {\
-          "packageLocation": "./.yarn/cache/file-type-npm-17.1.2-3fae3074b7-22103084b4.zip/node_modules/file-type/",\
+        ["npm:17.1.3", {\
+          "packageLocation": "./.yarn/cache/file-type-npm-17.1.3-8d111c3f81-c76145e711.zip/node_modules/file-type/",\
           "packageDependencies": [\
-            ["file-type", "npm:17.1.2"],\
+            ["file-type", "npm:17.1.3"],\
             ["readable-web-to-node-stream", "npm:3.0.2"],\
             ["strtok3", "npm:7.0.0-alpha.8"],\
             ["token-types", "npm:5.0.0-alpha.2"]\
@@ -1384,10 +1377,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["globals", [\
-        ["npm:13.16.0", {\
-          "packageLocation": "./.yarn/cache/globals-npm-13.16.0-ddfe03ff07-e571b28462.zip/node_modules/globals/",\
+        ["npm:13.17.0", {\
+          "packageLocation": "./.yarn/cache/globals-npm-13.17.0-a6039e7d26-fbaf4112e5.zip/node_modules/globals/",\
           "packageDependencies": [\
-            ["globals", "npm:13.16.0"],\
+            ["globals", "npm:13.17.0"],\
             ["type-fest", "npm:0.20.2"]\
           ],\
           "linkType": "HARD"\
