@@ -6,7 +6,7 @@ module.exports = async (client, player) => {
         .setFooter(client.config.footer);
     if (!player.commandStop) client.channels.cache.get(player.textId)?.send({ embeds: [embed] }).then(msg => { setTimeout(() => { msg.delete(); }, 10000); });
     for (const msg of player.cleanup) {
-        if (msg.interaction) {
+        if (msg.interaction && msg.interaction.replied) {
             await msg.interaction.deleteReply().catch(() => null);
         } else if (msg.replied && msg.replied == true) {
             await msg.deleteReply().catch(() => null);
