@@ -24,7 +24,7 @@
     "url": "https://github.com/thaddeuskkr/Ina/issues"
   },
   "homepage": "https://github.com/thaddeuskkr/Ina#readme",
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "dependencies": {
     "@discordjs/rest": "^1.0.0",
     "@keyv/mongo": "^2.1.6",
