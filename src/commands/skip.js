@@ -12,6 +12,6 @@ module.exports = {
             .setColor(client.config.color)
             .setFooter(client.config.footer);
         await player.skip();
-        interaction.reply({ embeds: [embed] }).then(player.cleanup.push(interaction));
+        interaction.reply({ embeds: [embed], fetchReply: true }).then(x => player.cleanup.push(x));
     }
 };

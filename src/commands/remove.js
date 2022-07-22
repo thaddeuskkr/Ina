@@ -17,8 +17,7 @@ module.exports = {
             .setDescription(`Removed track **${index + 1}** (**${removedTrack.title}** by **${removedTrack.author}**) from the queue.`)
             .setColor(client.config.color)
             .setFooter(client.config.footer);
-        player.cleanup.push(interaction);
-        return interaction.reply({ embeds: [embed] });
+        interaction.reply({ embeds: [embed], fetchReply: true }).then(x => player.cleanup.push(x));
     }
     
 };

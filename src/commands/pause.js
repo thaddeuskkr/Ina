@@ -13,7 +13,7 @@ module.exports = {
                 .setColor(client.config.errorColor)
                 .setFooter(client.config.footer);
             await player.pause(false);
-            return await interaction.reply({ embeds: [embed] }).then(x => player.cleanup.push(x));
+            return interaction.reply({ embeds: [embed], fetchReply: true }).then(x => player.cleanup.push(x));
         }
         if (!player?.queue?.current) {
             const embed = new EmbedBuilder()
@@ -29,6 +29,6 @@ module.exports = {
             .setColor(client.config.color)
             .setFooter(client.config.footer);
         await player.pause(true);
-        await interaction.reply({ embeds: [embed] }).then(msg => player.cleanup.push(msg));
+        interaction.reply({ embeds: [embed], fetchReply: true }).then(msg => player.cleanup.push(msg));
     }
 };

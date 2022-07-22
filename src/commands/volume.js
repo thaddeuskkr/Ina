@@ -18,8 +18,7 @@ module.exports = {
                 .setDescription(`The volume is currently set to **${oldVolume}%**.`)
                 .setColor(client.config.color)
                 .setFooter(client.config.footer);
-            player.cleanup.push(interaction);
-            return await interaction.reply({ embeds: [embed] });
+            return interaction.reply({ embeds: [embed], fetchReply: true }).then(x => player.cleanup.push(x));
         }
         if (!inRange(volume, 0, 200)) {
             const embed = new EmbedBuilder()
@@ -35,8 +34,7 @@ module.exports = {
             .setDescription(`The volume has been changed from **${oldVolume}%** to **${volume}%**.`)
             .setColor(client.config.color)
             .setFooter(client.config.footer);
-        player.cleanup.push(interaction);
-        return await interaction.reply({ embeds: [embed] });
+        return interaction.reply({ embeds: [embed], fetchReply: true }).then(x => player.cleanup.push(x));
         function inRange(x, min, max) {
             return (x - min) * ( x - max) <= 0;
         }

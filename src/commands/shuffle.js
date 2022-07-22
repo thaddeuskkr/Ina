@@ -12,6 +12,6 @@ module.exports = {
             .setColor(client.config.color)
             .setFooter(client.config.footer);
         await player.queue.shuffle();
-        interaction.reply({ embeds: [embed] }).then(msg => player.cleanup.push(msg));
+        interaction.reply({ embeds: [embed], fetchReply: true }).then(msg => player.cleanup.push(msg));
     }
 };

@@ -45,7 +45,7 @@ module.exports = {
             .setFooter(client.config.footer);
         if (!res.tracks.length) {
             client.logger.warn(`Search failed (${query}): ${JSON.stringify(res)}`);
-            return interaction.editReply({ embeds: [noResultsEmbed] }).then(player.cleanup.push(interaction));
+            return interaction.editReply({ embeds: [noResultsEmbed], fetchReply: true }).then(x => player.cleanup.push(x));
         }
 
         if (res.type === 'PLAYLIST') for (let track of res.tracks) player.queue.add(track);
@@ -57,6 +57,6 @@ module.exports = {
             .setDescription(`${res.type === 'PLAYLIST' ? `Queued **${res.tracks.length} tracks** from **[${res.playlistName}](${query})**` : `Queued [**${res.tracks[0].title}** by **${res.tracks[0].author}**](${res.tracks[0].uri}).${player.queue.length > 0 ? ` Position in queue: **${player.queue.length}**` : ''}`} `)
             // .setFooter(client.config.footer)
             .setColor(client.config.color);
-        return interaction.editReply({ embeds: [embed] }).then(player.cleanup.push(interaction));
+        return interaction.editReply({ embeds: [embed], fetchReply: true }).then(x => player.cleanup.push(x));
     }
 };
