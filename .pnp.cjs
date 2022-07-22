@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@keyv/mongo", "npm:2.1.6"],\
             ["chalk", "npm:4.1.2"],\
             ["common-tags", "npm:1.8.2"],\
-            ["discord-api-types", "npm:0.36.2"],\
+            ["discord-api-types", "npm:0.36.3"],\
             ["discord.js", "npm:14.0.3"],\
             ["dotenv", "npm:16.0.1"],\
             ["eslint", "npm:8.20.0"],\
@@ -801,6 +801,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/discord-api-types-npm-0.36.2-cbe93c5d39-0275ac9db1.zip/node_modules/discord-api-types/",\
           "packageDependencies": [\
             ["discord-api-types", "npm:0.36.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.36.3", {\
+          "packageLocation": "./.yarn/cache/discord-api-types-npm-0.36.3-63aa977556-3089c0fb37.zip/node_modules/discord-api-types/",\
+          "packageDependencies": [\
+            ["discord-api-types", "npm:0.36.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1607,7 +1614,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@keyv/mongo", "npm:2.1.6"],\
             ["chalk", "npm:4.1.2"],\
             ["common-tags", "npm:1.8.2"],\
-            ["discord-api-types", "npm:0.36.2"],\
+            ["discord-api-types", "npm:0.36.3"],\
             ["discord.js", "npm:14.0.3"],\
             ["dotenv", "npm:16.0.1"],\
             ["eslint", "npm:8.20.0"],\
