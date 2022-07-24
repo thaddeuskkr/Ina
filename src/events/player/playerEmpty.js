@@ -15,8 +15,9 @@ module.exports = async (client, player) => {
         }
     }
     setTimeout(() => {
-        if (player.queue.length == 0 && !player.queue.current) {
-            player.destroy();
+        const xplayer = client.kazagumo.players.get(player.guildId);
+        if (xplayer.queue.length == 0 && !xplayer.queue.current) {
+            xplayer.destroy();
         } else {
             return;
         }
