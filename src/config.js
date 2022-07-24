@@ -6,7 +6,7 @@ module.exports = {
             name: '' || process.env.LAVALINK_NAME,
             url: '' || process.env.LAVALINK_URL,
             auth: '' || process.env.LAVALINK_AUTH,
-            secure: false
+            secure: '' || process.env.LAVALINK_SECURE // true or false, will be converted to a boolean later
         }        
     ],
     spotify: {

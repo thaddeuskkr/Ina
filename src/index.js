@@ -34,6 +34,9 @@ const client = new Discord.Client({
         Partials.Channel
     ] 
 });
+config.lavalink_nodes.forEach(node => {
+    node.secure = Boolean(node.secure);
+});
 const kazagumo = new Kazagumo({
     defaultSearchEngine: config.defaultSearchEngine,
     send: (guildId, payload) => {
