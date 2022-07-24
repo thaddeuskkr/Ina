@@ -47,6 +47,6 @@
     "eslint": "8.20.0"
   },
   "engines": {
-    "node": "lts/gallium"
+    "node": "16.16.0"
   }
 }
