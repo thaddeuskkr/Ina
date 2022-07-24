@@ -30,7 +30,7 @@ module.exports = {
             textId: interaction.channel.id,
             voiceId: interaction.member.voice.channel.id,
             deaf: true,
-            mute: true
+            // mute: true
         });
 
         // player.setVolume(client.config.defaultVolume); // preserves audio quality if unchanged
