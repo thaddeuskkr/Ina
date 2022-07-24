@@ -103,6 +103,7 @@ client.logger.success(`Successfully loaded ${commandCount} commands`);
 
 process.on('unhandledRejection', (reason) => {
     client.logger.error(`Unhandled rejection: ${reason.toString()}`);
+    console.log(reason);
 });
 
 keyv.on('error', (error) => client.logger.error(`Keyv error: ${error.message}`));
