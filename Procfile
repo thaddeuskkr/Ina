@@ -1,1 +1,1 @@
-worker: yarn node .
+worker: node .
