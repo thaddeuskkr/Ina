@@ -1334,7 +1334,7 @@ __metadata:
     log-symbols: 4.1.0
     lyrics-searcher: ^1.0.58
     pretty-ms: 7.0.1
-    shoukaku: ^3.1.3
+    shoukaku: 3.1.0
     util: ^0.12.4
   languageName: unknown
   linkType: soft
@@ -2283,7 +2283,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shoukaku@npm:^3.1.0, shoukaku@npm:^3.1.3":
+"shoukaku@npm:3.1.0":
+  version: 3.1.0
+  resolution: "shoukaku@npm:3.1.0"
+  dependencies:
+    petitio: ^1.4.0
+    ws: ^8.7.0
+  checksum: edb0c84fdc59492744ca731aa632b488b0592578ce8410b6a6b6969d75801685908bc2a6f7876660a21a4a7ea6c12b83363defcdd49cf0a654fc93760fb426a0
+  languageName: node
+  linkType: hard
+
+"shoukaku@npm:^3.1.0":
   version: 3.1.3
   resolution: "shoukaku@npm:3.1.3"
   dependencies:

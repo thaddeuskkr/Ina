@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["log-symbols", "npm:4.1.0"],\
             ["lyrics-searcher", "npm:1.0.58"],\
             ["pretty-ms", "npm:7.0.1"],\
-            ["shoukaku", "npm:3.1.3"],\
+            ["shoukaku", "npm:3.1.0"],\
             ["util", "npm:0.12.4"]\
           ],\
           "linkType": "SOFT"\
@@ -1618,7 +1618,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["log-symbols", "npm:4.1.0"],\
             ["lyrics-searcher", "npm:1.0.58"],\
             ["pretty-ms", "npm:7.0.1"],\
-            ["shoukaku", "npm:3.1.3"],\
+            ["shoukaku", "npm:3.1.0"],\
             ["util", "npm:0.12.4"]\
           ],\
           "linkType": "SOFT"\
@@ -2702,6 +2702,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["shoukaku", [\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/shoukaku-npm-3.1.0-c2991677c9-edb0c84fdc.zip/node_modules/shoukaku/",\
+          "packageDependencies": [\
+            ["shoukaku", "npm:3.1.0"],\
+            ["petitio", "npm:1.4.0"],\
+            ["ws", "virtual:4ce8ffc7155e43632996b28df21a205b290fa7acd5bef9a129fe0485e1915e246215ca8c58b56fb55d8468cee60e1fec1ba3f1a9f8f7f5cc1044e00fff9dac61#npm:8.8.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.1.3", {\
           "packageLocation": "./.yarn/cache/shoukaku-npm-3.1.3-414bb6c810-130225845b.zip/node_modules/shoukaku/",\
           "packageDependencies": [\
